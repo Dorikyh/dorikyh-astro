@@ -1,0 +1,17 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+import Error from '../sections/Error.astro';
+---
+
+<Layout
+    title='Page not found'
+    description='This website was not found'>
+    <main>
+        <Error 
+            error="404"
+            message="Page not found"
+            contextMessage="This website was not found"
+        />
+    </main>
+</Layout>

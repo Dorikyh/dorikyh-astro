@@ -1,0 +1,11 @@
+---
+const { error, message, contextMessage } = Astro.props
+---
+
+<section>
+    <div class="text-center py-16">
+        <h1 class="text-9xl font-bold">{ error }</h1>
+        <p class="text-3xl text-zinc-400">{ message }</p>
+        <p class="text-lg text-zinc-500">{ contextMessage }</p>
+	</div>
+</section>
