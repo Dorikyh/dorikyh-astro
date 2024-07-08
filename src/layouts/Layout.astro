@@ -21,27 +21,14 @@ import Footer from '../components/footer.astro';
 		<meta name="description" content={description} />
 	</head>
 	
-	<body class="dark:bg-zinc-900 dark:text-zinc-300 bg-white text-zinc-800 font-sans">
+	<body class="dark:bg-zinc-900 dark:text-zinc-200 bg-white text-zinc-900 font-sans">
 		<Navbar />
-		<div class="flex flex-col text-sm py-9">
-			<div class="px-8 py-2 justify-center text-base md:gap-6 m-auto">
+		<div class="flex justify-center items-center h-screen sm:my-2 my-16">
+			<div class="w-full max-w-screen-md p-4 overflow-y-auto">
 				<slot/>
 			</div>
 		</div>
 	</body>
+
 	<Footer />
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-
-</style>

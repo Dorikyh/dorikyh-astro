@@ -1,0 +1,12 @@
+---
+import type { Page } from "astro";
+import Post from "../../layouts/Post.astro"; // Importación correcta de Post
+
+interface PageProps {
+  page: Page & { title: string; description: string; }; // Agregamos title y description a la interfaz Page
+}
+
+const { page } = Astro.props;
+---
+
+<Post title={page.title} description={page.description} page={page} />
